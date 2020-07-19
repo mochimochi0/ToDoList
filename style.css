@@ -1,0 +1,10 @@
+body{
+  background-color: #FFFFDD;
+}
+
+#list{
+  display: block;
+  margin: auto;
+  width: 500px;
+  padding: 0;
+}
