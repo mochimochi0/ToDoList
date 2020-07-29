@@ -1,5 +1,4 @@
 'use strict'
-window.onload = function(){
     const add = document.getElementById('list');
 
     document.getElementById('form').onsubmit = function(event){
@@ -30,4 +29,3 @@ window.onload = function(){
       }
     })
 
-};
