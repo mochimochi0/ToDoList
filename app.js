@@ -22,12 +22,12 @@ window.onload = function(){
     };
 
 
-// 削除機能
+    // 削除機能
 
-list.addEventListener('click',function(e){
-  if(e.target.classList.contains('delete')){
-    e.target.parentElement.remove();
-  }
-})
+    list.addEventListener('click',function(e){
+      if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+      }
+    })
 
 };
