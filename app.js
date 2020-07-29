@@ -1,5 +1,5 @@
 'use strict'
-winidow.onload = function(){
+window.onload = function(){
     const add = document.getElementById('list');
 
     document.getElementById('form').onsubmit = function(event){
