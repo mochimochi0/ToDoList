@@ -1,31 +1,31 @@
 'use strict'
-    const add = document.getElementById('list');
+const add = document.getElementById('list');
 
-    document.getElementById('form').onsubmit = function(event){
-        event.preventDefault();
-
-
-        const item = document.getElementById('form').word.value;
-
-    const li = `<li class="d-flex list-group-item justify-content-between align-items-center mt-2">
-    <span>${item}</span>
-    <i class="fas fa-trash-restore-alt delete"></i>
-    </li>`;
-
-    add.insertAdjacentHTML('afterbegin',li)
+document.getElementById('form').onsubmit = function(event){
+    event.preventDefault();
 
 
-    var reset=document.getElementById('input');
-    reset.value = '';
+    const item = document.getElementById('form').word.value;
 
-    };
+const li = `<li class="d-flex list-group-item justify-content-between align-items-center mt-2">
+<span>${item}</span>
+<i class="fas fa-trash-restore-alt delete"></i>
+</li>`;
+
+add.insertAdjacentHTML('afterbegin',li)
 
 
-    // 削除機能
+var reset=document.getElementById('input');
+reset.value = '';
 
-    list.addEventListener('click',function(e){
-      if(e.target.classList.contains('delete')){
-        e.target.parentElement.remove();
-      }
-    })
+};
+
+
+// 削除機能
+
+list.addEventListener('click',function(e){
+  if(e.target.classList.contains('delete')){
+    e.target.parentElement.remove();
+  }
+})
 
